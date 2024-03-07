@@ -1,8 +1,10 @@
 import { FC } from 'react';
 import { StyledTitle, StyledChangeColorWord } from './titleStyled';
-import { TitleProps } from './TitleProps';
 
-
+interface TitleProps {
+	text: string;
+	changeColorText?: string;
+}
 
 const Title: FC<TitleProps> = ({ text, changeColorText }) => {
 	return (

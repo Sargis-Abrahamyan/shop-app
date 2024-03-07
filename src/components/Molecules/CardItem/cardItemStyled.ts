@@ -1,4 +1,4 @@
-import { styled } from 'module/styled';
+import styled from 'styled-components';
 
 export const CardItem = styled.div`
 	width: 11.875em;
@@ -7,9 +7,9 @@ export const CardItem = styled.div`
 	cursor: pointer;
 	transition: transform 120ms ease-in;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background: var(--primary-color);
 	padding: 0.5rem;
 	border-radius: 5px;
@@ -38,7 +38,9 @@ export const CardHeader = styled.div`
 
 export const CardTitle = styled.h6``;
 
-export const CardContent = styled.div``;
+export const CardContent = styled.div`
+	padding: 25px;
+`;
 
 export const CardContentCategory = styled.p`
 	color: var(--gray-color);

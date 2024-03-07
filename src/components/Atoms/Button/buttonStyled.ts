@@ -1,4 +1,4 @@
-import { styled } from 'module/styled';
+import styled from 'styled-components';
 
 export const StyledButton = styled.button<{
 	$width?: string | number;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FooterContainer, FooterInfo } from './footerStyled';
-import { modeYears } from 'constants/Constants';
+import { modeYears } from '../../../constants';
 
 const Footer = () => {
 	return (

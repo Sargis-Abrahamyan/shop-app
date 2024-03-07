@@ -4,8 +4,7 @@ import { useAppSelector } from 'hooks';
 import { CardContainer } from './cardStyled';
 
 const Card: FC = () => {
-	const { products } = useAppSelector((state) => state.shop);
-
+	const { products } = useAppSelector((state) => state.products);
 	return (
 		<CardContainer>
 			{products.map((card) => (

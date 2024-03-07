@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { ProductInitialState, ProductData } from '../interface';
-import { Product } from 'global';
-import { axiosInstance } from 'Api/api';
+import { Product } from 'types/global';
+import { Api } from 'service/api';
 
 const initialState: ProductInitialState = {
 	products: [],
@@ -15,17 +15,17 @@ export const Get_Product = createAsyncThunk<Product[]>(
 		try {
 			const {
 				data: { products },
-			} = await axiosInstance.get<ProductData>(`/products/?&limit=${100}`);
+			} = await Api.get<ProductData>(`/products/?&limit=${100}`);
 
 			return products;
 		} catch (error) {
 			console.error(error);
-			return rejectWithValue('Failed to fetch products'); // Return an error message
+			return rejectWithValue('Failed to fetch products');
 		}
 	}
 );
 
-const shopSlice = createSlice({
+const productsSlice = createSlice({
 	name: 'shop',
 	initialState,
 	reducers: {},
@@ -45,4 +45,4 @@ const shopSlice = createSlice({
 	},
 });
 
-export default shopSlice.reducer;
+export default productsSlice.reducer;

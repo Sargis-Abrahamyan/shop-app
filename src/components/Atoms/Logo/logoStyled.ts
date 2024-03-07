@@ -1,11 +1,7 @@
-import { styled } from '../../../module/styled';
+import styled from 'styled-components';
 
 export const LogoWrapper = styled.div`
-	flex: 0 0 55%;
-
-	@media screen and (min-width: 580px) {
-		flex: 0 0 40%;
-	}
+	flex: 1 0 25%;
 `;
 
 export const LogoTitle = styled.h1`

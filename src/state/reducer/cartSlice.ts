@@ -1,6 +1,6 @@
-import { PayloadAction, createSlice, current } from '@reduxjs/toolkit';
-import { Product } from 'global';
-import { CartInitialState } from 'store/interface';
+import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { Product } from 'types/global';
+import { CartInitialState } from 'state/interface';
 
 const initialState: CartInitialState = {
 	carts: [],

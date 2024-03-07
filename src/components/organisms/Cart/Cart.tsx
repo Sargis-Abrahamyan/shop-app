@@ -1,13 +1,20 @@
-import { FC, memo } from 'react';
+import { FC, memo, useEffect } from 'react';
 import { Button, Title } from 'components/Atoms';
 import { CartItem } from 'components/Molecules';
-import { useCartModal } from 'context/useCartModal';
-import { useCart } from './useCart';
 import { CloseButton, CartContent, CartWrapper } from './cartStyled';
+import { getCartTotal } from 'state/reducer/cartSlice';
+import { useAppDispatch, useAppSelector } from 'hooks';
+import { useCart } from 'context/UseCart';
 
 const Cart: FC = () => {
-	const { isOpenCart, closeCart } = useCartModal();
-	const { totalPrice, carts, totalQuantity } = useCart();
+	const dispatch = useAppDispatch();
+	const { totalPrice, carts, totalQuantity } = useAppSelector((state) => state.cart);
+	const {  isOpenCart,  closeCart } = useCart();
+
+	useEffect(() => {
+		dispatch(getCartTotal());
+	}, [dispatch, carts]);
+
 
 	return (
 		<>

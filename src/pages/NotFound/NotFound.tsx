@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { Button, Title } from 'components/Atoms';
-import { notFound, backButtonText } from 'constants/Constants';
+import { notFound, backButtonText } from '../../constants';
 import { NotFoundWrapper } from './notFoundStyled';
-import { Link } from 'module/LinkRouter';
+import { Link } from 'react-router-dom';
 
 const NotFound: FC = () => {
 	return (

@@ -1,6 +1,7 @@
-import { styled } from 'module/styled';
-import { comonFlexColumn } from 'assets/common/commonStyled';
+import { styled } from 'styled-components';
 
 export const NotFoundWrapper = styled.article`
-	${comonFlexColumn}
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 `;

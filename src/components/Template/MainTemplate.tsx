@@ -1,12 +1,15 @@
-import { FC } from 'react';
-import { Footer, NavBar } from 'components/organisms';
-import { MainTemplateProps } from './MainTemplateProps';
+import { FC, ReactNode } from 'react';
+import { Footer, Header } from 'components/organisms';
 import { MainTemplateContainer } from './mainTemplateStyled';
+
+interface MainTemplateProps {
+	children?: ReactNode;
+}
 
 const MainTemplate: FC<MainTemplateProps> = ({ children }) => {
 	return (
 		<>
-			<NavBar />
+			<Header />
 			<MainTemplateContainer>{children}</MainTemplateContainer>
 			<Footer />
 		</>

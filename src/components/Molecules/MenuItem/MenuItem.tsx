@@ -1,6 +1,10 @@
 import { FC } from 'react';
 import { Item, MenuLink } from './menuItemStyled';
-import { MenuItemProps } from './MenuItemProps';
+
+interface MenuItemProps {
+	title?: string;
+	path: string;
+}
 
 const MenuItem: FC<MenuItemProps> = ({ path, title }) => {
 	return (

@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { Button, Image } from 'components/Atoms';
 import { useCartItem } from './useCartItem';
+import { Cart } from 'types/global';
 import * as Styled from './cartItemStyled';
-import { Cart } from 'global';
 
 interface CartItemProps {
 	cart: Cart;

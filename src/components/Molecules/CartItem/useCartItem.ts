@@ -1,5 +1,5 @@
 import { useAppDispatch } from 'hooks';
-import { decrementQuantity, incrementQuantity, removedCart } from 'store/reducer/cartSlice';
+import { decrementQuantity, incrementQuantity, removedCart } from 'state/reducer/cartSlice';
 
 export const useCartItem = () => {
 	const dispatch = useAppDispatch();

@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Button, Title } from 'components/Atoms';
-import { HomeButtonText, homeTilte, homeTitleLastWord } from 'constants/Constants';
-import { Link } from 'module/LinkRouter';
+import { HomeButtonText, homeTilte, homeTitleLastWord } from '../../constants';
+import { Link } from 'react-router-dom';
 import { HomeWrapper } from './homeStyled';
 
 const Home: FC = () => {

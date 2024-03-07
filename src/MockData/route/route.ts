@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { Route } from '../../global';
+import { Route } from '../../types/global';
 
 export const route: Route[] = [
 	{

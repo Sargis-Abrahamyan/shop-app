@@ -1,4 +1,4 @@
-import { styled } from 'module/styled';
+import styled from 'styled-components';
 
 export const LoadingContainer = styled.div`
 	height: 100vh;
@@ -6,7 +6,6 @@ export const LoadingContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid;
 `;
 
 export const LoadingSpiner = styled.div`

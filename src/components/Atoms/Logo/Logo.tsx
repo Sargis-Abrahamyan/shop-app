@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { logoTitle } from 'constants/Constants';
+import { logoTitle } from '../../../constants';
 import { LogoWrapper, LogoTitle } from './logoStyled';
 
 const Logo: FC = () => {

@@ -1,4 +1,4 @@
-import { Cart, Product } from 'global';
+import { Cart, Product } from 'types/global';
 
 export interface ProductData {
 	limit: number;
